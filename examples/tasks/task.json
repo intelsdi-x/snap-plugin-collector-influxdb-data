@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "schedule": {
+    "type": "simple",
+    "interval": "1s"
+  },
+  "workflow": {
+    "collect": {
+      "metrics": {
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/value/data": {},
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/count/data": {},
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/mean/data": {},
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/max/data": {},
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/min/data": {},
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/mode/data": {}
+      },
+      "config": {
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/value": {
+          "data_type": "value",
+          "host": "http://127.0.0.1:8086",
+          "user": "admin",
+          "password": "admin",
+          "database": "snap",
+          "query": "select * from \"intel/procfs/cpu/utilization_percentage\" where time = 1490096770124804590 limit 1"
+        },
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/count": {
+          "data_type": "count",
+          "host": "http://127.0.0.1:8086",
+          "user": "admin",
+          "password": "admin",
+          "database": "snap",
+          "query": "select count(value) from \"intel/procfs/cpu/utilization_percentage\" where time > now() - 10w"
+        },
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/mean": {
+          "data_type": "mean",
+          "host": "http://127.0.0.1:8086",
+          "user": "admin",
+          "password": "admin",
+          "database": "snap",
+          "query": "select mean(value) from \"intel/procfs/cpu/utilization_percentage\" where time > now() - 10w"
+        },
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/max": {
+          "data_type": "max",
+          "host": "http://127.0.0.1:8086",
+          "user": "admin",
+          "password": "admin",
+          "database": "snap",
+          "query": "select max(value) from \"intel/procfs/cpu/utilization_percentage\" where time > now() - 10w"
+        },
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/min": {
+          "data_type": "min",
+          "host": "http://127.0.0.1:8086",
+          "user": "admin",
+          "password": "admin",
+          "database": "snap",
+          "query": "select min(value) from \"intel/procfs/cpu/utilization_percentage\" where time > now() - 10w"
+        },
+        "/intel/influxdb-data/intel_procfs_cpu_utilization_percentage/mode": {
+          "data_type": "mode",
+          "host": "http://127.0.0.1:8086",
+          "user": "admin",
+          "password": "admin",
+          "database": "snap",
+          "query": "select mode(value) from \"intel/procfs/cpu/utilization_percentage\" where time > now() - 10w"
+        }
+      },
+      "publish": [
+        {
+          "plugin_name": "file",
+          "config": {
+            "file": "/tmp/influxdb-data.log"
+          }
+        }
+      ]
+    }
+  }
+}
