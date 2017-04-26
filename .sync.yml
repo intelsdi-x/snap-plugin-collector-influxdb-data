@@ -1,17 +1,1 @@
-:global:
-  build:
-    matrix:
-      - GOOS: linux
-        GOARCH: amd64
-.travis.yml:
-  sudo: true
-  go:
-  - 1.7.x
-  - 1.8.x
-  deploy:
-    access_key_id: AKIAINMB43VSSPFZISAA
-    secret_access_key:
-      secure: hrmPUh6k4SreSpBhqzCoUQAlg9xeoPKHzm6r/moxU+270Up2S4Wi6ExjLpQeqMRMu2QtvZDyTEHe2yYx9TFDQ64ng/GJZj1sf4Nr7SzrYLjzCZRdpr30cMvcKencKtHxqfTUZXSzaHwzWWgOu0onRHg46Zwsqp7qZoJniamub/wDQlS5Y35jhJvdC5wnee5OnMQWBczSilcHhoxBOMS1Wb9Z8U2ISNkPEoaI1TXbw9XIuRJioHLj2c2oCMDrBuIJ8oJg7ULXfe2QW6eqKIGyYvgwZnEaZyI9064MVu0+XHnmql3FMyiIjmYecU0z6awPVCY2Wuq3Q4Oi/rhuCGFQBSzzbqkLNFArVsc/o+f9ZZKwxLmOaddnq7RHi1XpidjD3aFAcAO28CtDD5WKYA2C4DoX+WOEBf3ktDGfMfYUWsoMMgzSWeRyWC9i28WvjNxg34Gt1nh/ObFNH5KmkaVO5ZpmQwAjLb5s/fBa4/f+e/lRgYvq1QYDwhT+u5CRVw9Ex5WDScQSJxOAuIr6FBW78isN9aG8A0qU/CzRqcrxa0h625d6KvNplEYJKZ3cR4i3qtM1KKoJ8FG3bN54T1vIkzbO5+uD5/B5hiuT9gHun1p7RgWyPGmlK1NBmdWbRf4BKcGq88hn+FC1msDirTMmTjsPc24w8SB/eKByMbuHT6s=
-    api_key:
-      secure: VAWwyZ1+r4v4kdwBHgyz1ad3dKOhpzfuPlONIHXN7IC5xCiOwFyzjGqaZkJsLrdyr3VUmyk1dS9nACFM8SJ+xLFb9JMjUJIg9z2Ivq7NtXXPt41k50Gcx3cZVecdxJwKI4wcBUuByGBzy8oOoo34429NUWv3JThAxT36QP+LoOYmrdLLASNJMpfiTJ9+n0aOKa+CXoGcVVFxnd81AOd8abQPoU7gZduwDR196WohYa0m4vRIW03AnxjrgwDO+FRR9atDUC6xJnMQ0Lv8JtCbazGYaEMuVwxW9rdwUT9N3tbTSKnrMYeETT4CX4VW/+E/newIkgRGIjFIO5zbmGPCbnE/UMFP+obSjx92sANRzBesvvRWdfD1aBF9VdjIZCmgJqtLijPC8rQDkIQTiPgD0S1hy02L7uLff+mfUfpfRiPgRtge8Z2Z2bhVjdAEUm1pvmw4kAYCapp2a03nYW5HZSDxmFBIBiMam+MfO+NML3Xj+ExOBxg/vVY9fYqlLtP2oYnpO7joVIvobeaRZu4gz5c0j8XDdig6vTkKPQtvWsDbIxfHNAcXIkhMFXjLT2qvawPL428YI+aCkHYfjtcTC65qeuRM1V8cpRGxFMpDrYo4BwWdtu8yxA7oH6IBGUin5Gz16ZP1wng1cNveb3aFsNV7pCm0LlRU6vP7c/CknNU=
-
+# NOTE: this plugin uses default settings
