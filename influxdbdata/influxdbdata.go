@@ -219,7 +219,7 @@ func getConfig(cfg plugin.Config) (map[string]string, error) {
 	}
 
 	if strings.Contains(config["query"], "drop") || strings.Contains(config["query"], "delete") {
-		return nil, fmt.Errorf("the plugin is inteded to receive data, `drop` and `delete` are not allowed in query, query:%v ", config["query"])
+		return nil, fmt.Errorf("the plugin is intended to receive data, `drop` and `delete` are not allowed in query, query: %v ", config["query"])
 	}
 
 	return config, nil
