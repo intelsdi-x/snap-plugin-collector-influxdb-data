@@ -27,8 +27,8 @@ import (
 	"sync"
 	"time"
 
-	log "github.com/Sirupsen/logrus"
 	"github.com/influxdata/influxdb/client/v2"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/intelsdi-x/snap-plugin-lib-go/v1/plugin"
 )
